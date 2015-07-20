@@ -12,6 +12,9 @@
 		2E8E47101B5B420B00A4093E /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E470F1B5B420B00A4093E /* PopUp.swift */; };
 		2EA951DF1B5B46A90042B586 /* PopUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951DE1B5B46A90042B586 /* PopUp1.swift */; };
 		2EA951E31B5B509F0042B586 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951E21B5B509F0042B586 /* Monster.swift */; };
+		2EA951E51B5B64B70042B586 /* BattleArena.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951E41B5B64B70042B586 /* BattleArena.swift */; };
+		2EA951E71B5B65760042B586 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951E61B5B65760042B586 /* Town.swift */; };
+		2EA951E91B5B6A360042B586 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951E81B5B6A360042B586 /* Untitled.swift */; };
 		5B121030197484FA004C1E1D /* AbominationBattlerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* AbominationBattlerActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -158,6 +161,9 @@
 		2E8E470F1B5B420B00A4093E /* PopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopUp.swift; path = Source/PopUp.swift; sourceTree = "<group>"; };
 		2EA951DE1B5B46A90042B586 /* PopUp1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopUp1.swift; path = Source/PopUp1.swift; sourceTree = "<group>"; };
 		2EA951E21B5B509F0042B586 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		2EA951E41B5B64B70042B586 /* BattleArena.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BattleArena.swift; path = Source/BattleArena.swift; sourceTree = "<group>"; };
+		2EA951E61B5B65760042B586 /* Town.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Town.swift; path = Source/Town.swift; sourceTree = "<group>"; };
+		2EA951E81B5B6A360042B586 /* Untitled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Untitled.swift; path = Source/Untitled.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -447,9 +453,12 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				2E8E47071B5B35B000A4093E /* Habitat.swift */,
+				2EA951E61B5B65760042B586 /* Town.swift */,
+				2EA951E41B5B64B70042B586 /* BattleArena.swift */,
 				2E8E470F1B5B420B00A4093E /* PopUp.swift */,
 				2EA951DE1B5B46A90042B586 /* PopUp1.swift */,
 				2E8E470D1B5B364800A4093E /* NewGame.swift */,
+				2EA951E81B5B6A360042B586 /* Untitled.swift */,
 				2EA951E21B5B509F0042B586 /* Monster.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
@@ -829,9 +838,12 @@
 			files = (
 				2EA951E31B5B509F0042B586 /* Monster.swift in Sources */,
 				2EA951DF1B5B46A90042B586 /* PopUp1.swift in Sources */,
+				2EA951E51B5B64B70042B586 /* BattleArena.swift in Sources */,
+				2EA951E71B5B65760042B586 /* Town.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				2E8E47081B5B35B000A4093E /* Habitat.swift in Sources */,
 				2E8E470E1B5B364800A4093E /* NewGame.swift in Sources */,
+				2EA951E91B5B6A360042B586 /* Untitled.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				2E8E47101B5B420B00A4093E /* PopUp.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,

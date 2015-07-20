@@ -10,13 +10,13 @@
 
 class NewGame: CCNode {
     
-    //var menuStatBlock
+    weak var menuStatBlock : CCLabelTTF!
     
     
-    //func play() {
-     //   let habitat = CCBReader.loadAsScene("Habitat")
-     //   CCDirector.sharedDirector().presentScene(habitat)
-   // }
+    func untitled() {
+       let untitled = CCBReader.loadAsScene("Untitled")
+       CCDirector.sharedDirector().presentScene(untitled)
+    }
 
 
 }
