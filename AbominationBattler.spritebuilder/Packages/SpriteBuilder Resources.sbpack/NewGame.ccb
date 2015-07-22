@@ -14,7 +14,7 @@
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
@@ -908,7 +908,7 @@
 								<key>type</key>
 								<string>StringSimple</string>
 								<key>value</key>
-								<string></string>
+								<string>Red</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -955,7 +955,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>previewMonster:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -1234,7 +1234,7 @@
 								<key>type</key>
 								<string>StringSimple</string>
 								<key>value</key>
-								<string></string>
+								<string>Green</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1281,7 +1281,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>previewMonster:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -1560,7 +1560,7 @@
 								<key>type</key>
 								<string>StringSimple</string>
 								<key>value</key>
-								<string></string>
+								<string>Blue</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1607,7 +1607,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>previewMonster:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -1886,7 +1886,7 @@
 								<key>type</key>
 								<string>StringSimple</string>
 								<key>value</key>
-								<string></string>
+								<string>Yellow</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1933,7 +1933,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>previewMonster:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -2212,7 +2212,7 @@
 								<key>type</key>
 								<string>StringSimple</string>
 								<key>value</key>
-								<string></string>
+								<string>Purple</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2259,7 +2259,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>previewMonster:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -2514,6 +2514,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

@@ -19,4 +19,9 @@ class NewGame: CCNode {
     }
 
 
+    func previewMonster(button: CCButton) {
+        println("I see my \(button.name) monster!")
+        menuStatBlock.string = button.name
+    }
+    
 }

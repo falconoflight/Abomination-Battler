@@ -17,17 +17,20 @@ class Habitat: CCNode {
     weak var happyButton: CCButton!
     weak var feedButton: CCButton!
     
-    var timeLeft: Float = 1000 {
+    var meterTime: Float = 100
+    
+    
+    var timeLeft: Float = 100 {
         didSet {
-            timeLeft = max(min(timeLeft, 1000), 0)
-            hungerBar.scaleX = timeLeft / Float(1000)
+            timeLeft = max(min(timeLeft, meterTime), 0)
+            hungerBar.scaleX = timeLeft / Float(meterTime)
         }
     }
     
-    var boredom: Float = 1000 {
+    var boredom: Float = 100 {
         didSet {
-            boredom = max(min(boredom, 1000),0)
-            happyBar.scaleX = timeLeft / Float(1000)
+            boredom = max(min(boredom, meterTime),0)
+            happyBar.scaleX = boredom / Float(meterTime)
         }
     }
     
@@ -47,7 +50,7 @@ class Habitat: CCNode {
     }
     
     func feed() {
-        timeLeft = 1000
+        timeLeft = 100
     }
 
     
@@ -57,7 +60,7 @@ class Habitat: CCNode {
     }
     
     func happyUp() {
-        boredom = 1000
+        boredom = 100
     }
     
     //func stats() {
