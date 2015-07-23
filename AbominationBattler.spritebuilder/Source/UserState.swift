@@ -13,7 +13,22 @@ class UserState: NSUserDefaults {
                 NSUserDefaults.standardUserDefaults().synchronize()
             }
         }
-        
+    
+    var monsterType: String = NSUserDefaults.standardUserDefaults().stringForKey("monster") ?? "Monster?" {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setObject(monsterType, forKey: "monster")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    var didSummonMonster: Bool = NSUserDefaults.standardUserDefaults().boolForKey("didSummonMonster") ?? false {
+        didSet{
+            NSUserDefaults.standardUserDefaults().setBool(didSummonMonster, forKey: "didSummonMonster")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+
+    
       //  var highScore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {
        //     didSet {
          //       NSUserDefaults.standardUserDefaults().setInteger(highScore, forKey:"myHighScore")

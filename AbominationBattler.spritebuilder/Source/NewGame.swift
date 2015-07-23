@@ -11,17 +11,24 @@
 class NewGame: CCNode {
     
     weak var menuStatBlock : CCLabelTTF!
+    var lastMonsterPicked: String!
     
     
     func untitled() {
-       let untitled = CCBReader.loadAsScene("Untitled")
+       
+        var stateObject = UserState()
+
+        stateObject.monsterType = lastMonsterPicked
+        
+        let untitled = CCBReader.loadAsScene("Untitled")
        CCDirector.sharedDirector().presentScene(untitled)
     }
 
 // makes all the monster choosing buttons one selector with the argument CCButton  
     func previewMonster(button: CCButton) {
         println("I see my \(button.name) monster!")
-        menuStatBlock.string = button.name
+        menuStatBlock.string = button.name // needs the stat code shit attached to button
+        lastMonsterPicked = button.name
     }
     
 }

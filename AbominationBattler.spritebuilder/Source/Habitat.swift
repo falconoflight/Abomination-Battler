@@ -34,9 +34,13 @@ class Habitat: CCNode {
         }
     }
     
-    func didLoadFromCCB() {
+    
         
+    
+    func didLoadFromCCB() {
+        var userState = UserState()
         userInteractionEnabled = true
+        userState.didSummonMonster = true
     }
     
     override func update(delta: CCTime) {
@@ -65,12 +69,12 @@ class Habitat: CCNode {
     
     //func stats() {
       //  let habitat = CCBReader.loadAsScene("Habitat")
-      //  CCDirector.sharedDirector().presentScene(habitat)
+    
    // }
     
     //func items() {
      //   let habitat = CCBReader.loadAsScene("Habitat")
-      //  CCDirector.sharedDirector().presentScene(habitat)
+    
     //}
     
     func Town() {
