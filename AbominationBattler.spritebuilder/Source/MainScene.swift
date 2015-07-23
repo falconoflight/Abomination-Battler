@@ -12,5 +12,11 @@ class MainScene: CCNode {
         CCDirector.sharedDirector().presentScene(newGame)
     }
 
+    
+    override func onEnter() {
+        super.onEnter()
+        var userState = UserState()
+        println(userState.name)
+    }
 
 }

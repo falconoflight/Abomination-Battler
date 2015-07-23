@@ -7,7 +7,7 @@
 //
 
 class UserState: NSUserDefaults {
-        var name: String = NSUserDefaults.standardUserDefaults().stringForKey("monsterName") ?? "User" {
+        var name: String = NSUserDefaults.standardUserDefaults().stringForKey("monsterName") ?? "Monster" {
             didSet {
                 NSUserDefaults.standardUserDefaults().setObject(name, forKey:"monsterName")
                 NSUserDefaults.standardUserDefaults().synchronize()

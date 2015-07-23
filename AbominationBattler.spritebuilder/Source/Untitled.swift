@@ -9,9 +9,19 @@
 
 class Untitled: CCNode {
     
+    var monsterNaming: CCTextField!
+    
     func ok() {
+        
+        var stateObject = UserState()
+        
+        var monsterName = monsterNaming.string
+        
+        stateObject.name = monsterName
+        
         let habitat = CCBReader.loadAsScene("Habitat")
         CCDirector.sharedDirector().presentScene(habitat)
+
     }
 
 
