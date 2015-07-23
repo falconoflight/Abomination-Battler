@@ -18,7 +18,7 @@ class NewGame: CCNode {
        CCDirector.sharedDirector().presentScene(untitled)
     }
 
-
+// makes all the monster choosing buttons one selector with the argument CCButton  
     func previewMonster(button: CCButton) {
         println("I see my \(button.name) monster!")
         menuStatBlock.string = button.name
