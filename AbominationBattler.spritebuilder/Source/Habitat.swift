@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Karl Stenerud. All rights reserved.
 //
 
-//import Cocoa
+
 
 class Habitat: CCNode {
     

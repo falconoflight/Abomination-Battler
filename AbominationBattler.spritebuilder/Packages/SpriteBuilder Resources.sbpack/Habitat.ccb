@@ -14,7 +14,7 @@
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
@@ -96,7 +96,7 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.1161290407180786</real>
+							<real>0.99974220991134644</real>
 							<real>1</real>
 							<false/>
 							<integer>0</integer>
@@ -146,6 +146,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -838,7 +840,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>190</real>
+									<real>189.5</real>
 									<real>20</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1164,7 +1166,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>261.94644165039062</real>
+									<real>260.556640625</real>
 									<real>21.000007629394531</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1490,7 +1492,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>349</real>
+									<real>347</real>
 									<real>20</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1816,7 +1818,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>433</real>
+									<real>430.5</real>
 									<real>20</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3068,8 +3070,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
