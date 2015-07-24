@@ -10,24 +10,26 @@
 
 class Habitat: CCNode {
     
-    //weak var Character: CCSprite!
-    
     weak var hungerBar: CCSprite!
     weak var happyBar: CCSprite!
     weak var happyButton: CCButton!
     weak var feedButton: CCButton!
+    weak var spawnPoint: CCNode!
     
-    var meterTime: Float = 100
+    var monsterSprite: CCSprite!
+    var userState = UserState()
+    
+    var meterTime: Float = 1000
     
     
-    var timeLeft: Float = 100 {
+    var timeLeft: Float = 1000 {
         didSet {
             timeLeft = max(min(timeLeft, meterTime), 0)
             hungerBar.scaleX = timeLeft / Float(meterTime)
         }
     }
     
-    var boredom: Float = 100 {
+    var boredom: Float = 1000 {
         didSet {
             boredom = max(min(boredom, meterTime),0)
             happyBar.scaleX = boredom / Float(meterTime)
@@ -38,9 +40,10 @@ class Habitat: CCNode {
         
     
     func didLoadFromCCB() {
-        var userState = UserState()
         userInteractionEnabled = true
         userState.didSummonMonster = true
+        monsterSprite = CCBReader.load(userState.monsterType) as! CCSprite
+        spawnPoint.addChild(monsterSprite)
     }
     
     override func update(delta: CCTime) {
@@ -54,7 +57,7 @@ class Habitat: CCNode {
     }
     
     func feed() {
-        timeLeft = 100
+        timeLeft = 1000
     }
 
     
@@ -64,7 +67,7 @@ class Habitat: CCNode {
     }
     
     func happyUp() {
-        boredom = 100
+        boredom = 1000
     }
     
     //func stats() {

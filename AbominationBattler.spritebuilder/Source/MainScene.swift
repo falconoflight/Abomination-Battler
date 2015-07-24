@@ -22,13 +22,13 @@ class MainScene: CCNode {
         var userState = UserState()
         println(userState.name + " " + userState.monsterType + " \(userState.didSummonMonster)")
         
-        if userState.didSummonMonster {
-            newGameButton.visible = false
-        }
+       // if userState.didSummonMonster {
+         //   newGameButton.visible = false
+       // }
         
-        else {
-            continueButton.visible = false
-        }
+       // else {
+         //   continueButton.visible = false
+       // }
     }
 
 }
