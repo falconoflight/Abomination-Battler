@@ -10,17 +10,30 @@
 class Untitled: CCNode {
     
     var monsterNaming: CCTextField!
+    var viewMonster: CCNode!
+    var stateObject = UserState()
+    var monsterSprite: CCSprite!
+    
+    func didLoadFromCCB (){
+        stateObject.didSummonMonster = true
+        monsterSprite = CCBReader.load(stateObject.monsterType) as! CCSprite
+        viewMonster.addChild(monsterSprite)
+        
+    }
+
     
     func ok() {
         
-        var stateObject = UserState()
+        
         
         var monsterName = monsterNaming.string
         
         stateObject.name = monsterName
         
+        
         let habitat = CCBReader.loadAsScene("Habitat")
         CCDirector.sharedDirector().presentScene(habitat)
+        
 
     }
 
