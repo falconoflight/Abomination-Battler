@@ -10,7 +10,16 @@
 
 class Thunderdome: CCNode {
     
+    weak var enemyHealth: CCNodeColor!
+    weak var enemyStamina: CCNodeColor!
+    weak var myHealth: CCNodeColor!
+    weak var myStamina: CCNodeColor!
     
+    weak var myMonster: CCNode!
+    weak var enemyMonster: CCNode!
+    
+    weak var myMonsterTag: CCLabelTTF!
+    weak var enemyMonsterTag: CCLabelTTF!
     
     
     func forfeit() {
