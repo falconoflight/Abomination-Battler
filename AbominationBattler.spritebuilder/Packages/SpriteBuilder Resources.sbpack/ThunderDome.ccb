@@ -150,7 +150,7 @@
 				<key>displayName</key>
 				<string>Attack</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>attack</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -208,7 +208,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>toAttack</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -463,8 +463,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -478,7 +476,7 @@
 				<key>displayName</key>
 				<string>Defend</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>defend</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -536,7 +534,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>toDefend</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -791,6 +789,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
