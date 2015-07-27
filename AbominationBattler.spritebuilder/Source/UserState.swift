@@ -27,6 +27,20 @@ class UserState: NSUserDefaults {
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
+    
+    var notHungry: Float = NSUserDefaults.standardUserDefaults().floatForKey("hungerHurts") ?? 1000 {
+        didSet{
+            NSUserDefaults.standardUserDefaults().setFloat(notHungry, forKey: "hungerHurts")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    var happyMonster: Float = NSUserDefaults.standardUserDefaults().floatForKey("bloodthirsty") ?? 1000 {
+        didSet{
+            NSUserDefaults.standardUserDefaults().setFloat(happyMonster, forKey: "bloodthirsty")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
 
     
       //  var highScore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {

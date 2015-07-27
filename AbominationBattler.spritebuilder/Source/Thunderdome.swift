@@ -13,8 +13,9 @@ class Thunderdome: CCNode {
     
     
     
-    //func play() {
-      //  let habitat = CCBReader.loadAsScene("Habitat")
-        //CCDirector.sharedDirector().presentScene(habitat)
+    func forfeit() {
+        let habitat = CCBReader.loadAsScene("Habitat")
+        CCDirector.sharedDirector().presentScene(habitat)
+    }
 
 }

@@ -22,14 +22,14 @@ class Habitat: CCNode {
     var meterTime: Float = 1000
     
     
-    var timeLeft: Float = 1000 {
+    var timeLeft: Float = 0 {
         didSet {
             timeLeft = max(min(timeLeft, meterTime), 0)
             hungerBar.scaleX = timeLeft / Float(meterTime)
         }
     }
     
-    var boredom: Float = 1000 {
+    var boredom: Float = 0 {
         didSet {
             boredom = max(min(boredom, meterTime),0)
             happyBar.scaleX = boredom / Float(meterTime)
@@ -44,6 +44,8 @@ class Habitat: CCNode {
         userState.didSummonMonster = true
         monsterSprite = CCBReader.load(userState.monsterType) as! CCSprite
         spawnPoint.addChild(monsterSprite)
+        timeLeft = userState.notHungry
+        boredom = userState.happyMonster
     }
     
     override func update(delta: CCTime) {
@@ -54,6 +56,14 @@ class Habitat: CCNode {
             //tamagachi dies
             println("gameOver")
         }
+    }
+    
+    override func onExit() {
+        userState.notHungry = timeLeft
+        userState.happyMonster = boredom
+    
+        super.onExit()
+    
     }
     
     func feed() {
