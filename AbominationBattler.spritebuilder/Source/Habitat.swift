@@ -61,10 +61,15 @@ class Habitat: CCNode {
     }
 
     
-    func toArena() {
-        let toArena = CCBReader.loadAsScene("BattleArena")
-        CCDirector.sharedDirector().presentScene(toArena)
+    func toThunderdome(){
+        let toThunderdome = CCBReader.loadAsScene("Thunderdome")
+        CCDirector.sharedDirector().presentScene(toThunderdome)
     }
+    
+    //func toArena() {
+        //let toArena = CCBReader.loadAsScene("BattleArena")
+        //CCDirector.sharedDirector().presentScene(toArena)
+    //}
     
     func happyUp() {
         boredom = 1000
