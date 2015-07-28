@@ -11,6 +11,7 @@ import Foundation
 struct Ability {
     var cost: Int
     var dmg: Int
+    var name: String
     
 }
 
@@ -22,7 +23,7 @@ class Monster {
     var maxStamina: Int = 0
     var currentStamina: Int = 0
     
-    var moveList: Dictionary < String, Ability > = Dictionary <String, Ability>()
+    var moveList: [Ability] = []
     
     var monsterType: String = ""
     
@@ -56,11 +57,17 @@ class Monster {
             for key: String in dict.allKeys as! [String] {
                 let dmg: Int = dict[key]?.valueForKey("dmg") as? Int ?? 0
                 let cost: Int = dict[key]?.valueForKey("cost") as? Int ?? 0
-                let ability = Ability(cost: cost, dmg: dmg)
-                moveList.updateValue(ability, forKey: key)
+                let ability = Ability(cost: cost, dmg: dmg, name: key)
+                moveList.append(ability)
                 println(key)
             }
         }
 
+    }
+    
+    func chooseRandomAbility() ->Ability {
+        
+        let rand = Int(arc4random())%moveList.count
+        return moveList[rand]
     }
 }

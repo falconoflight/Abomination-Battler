@@ -146,8 +146,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -166,7 +164,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Fight</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -492,7 +490,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Play</string>
 						<key>memberVarAssignmentName</key>
 						<string>happyButton</string>
 						<key>memberVarAssignmentType</key>
@@ -818,7 +816,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Feed</string>
 						<key>memberVarAssignmentName</key>
 						<string>feedButton</string>
 						<key>memberVarAssignmentType</key>
@@ -1144,7 +1142,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Stats</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -1470,7 +1468,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Items</string>
 						<key>hidden</key>
 						<true/>
 						<key>memberVarAssignmentName</key>
@@ -1479,6 +1477,14 @@
 						<integer>1</integer>
 						<key>properties</key>
 						<array>
+							<dict>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
 							<dict>
 								<key>name</key>
 								<string>name</string>
@@ -1787,6 +1793,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1798,7 +1806,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCButton</string>
+						<string>Travel</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
