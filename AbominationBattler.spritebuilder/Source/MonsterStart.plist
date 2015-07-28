@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Red</key>
+	<dict>
+		<key>startHP</key>
+		<integer>30</integer>
+		<key>startStamina</key>
+		<integer>30</integer>
+	</dict>
+	<key>Yellow</key>
+	<dict>
+		<key>startHP</key>
+		<integer>25</integer>
+		<key>startStamina</key>
+		<integer>35</integer>
+	</dict>
+	<key>Green</key>
+	<dict>
+		<key>startHP</key>
+		<integer>28</integer>
+		<key>startStamina</key>
+		<integer>32</integer>
+	</dict>
+	<key>Blue</key>
+	<dict>
+		<key>startHP</key>
+		<integer>35</integer>
+		<key>startStamina</key>
+		<integer>25</integer>
+	</dict>
+	<key>Purple</key>
+	<dict>
+		<key>startHP</key>
+		<integer>33</integer>
+		<key>startStamina</key>
+		<integer>27</integer>
+	</dict>
+</dict>
+</plist>

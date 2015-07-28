@@ -9,6 +9,9 @@
 import Foundation
 
 struct Ability {
+    var cost: Int
+    var dmg: Int
+    
 }
 
 class Monster {
@@ -21,12 +24,43 @@ class Monster {
     
     var moveList: Dictionary < String, Ability > = Dictionary <String, Ability>()
     
+    var monsterType: String = ""
     
     var level: Int = 1
     var currentXP: Int = 0
     var xpToLevel: Int = 0
     var totalXP: Int = 0
     
+    class func generateMonsterFromType (type : String) -> Monster {
+        
+        var monster: Monster = Monster()
+        
+        if let path = NSBundle.mainBundle().pathForResource("MonsterStart", ofType: "plist"){
+            let src = NSDictionary(contentsOfFile: path)
+            let dict = src?[type]  as! NSDictionary
+            monster.maxHP = dict["startHP"]!.integerValue as Int
+            monster.maxStamina = dict["startStamina"]!.integerValue as Int
+            monster.monsterType = type
+            monster.loadMoves()
+        }
+        
+        return monster
+
+    }
     
-    
+    func loadMoves() {
+        
+        if let path = NSBundle.mainBundle().pathForResource("MonsterMoves", ofType: "plist"){
+            let src = NSDictionary(contentsOfFile: path)
+            let dict = src?[monsterType] as! NSDictionary
+            for key: String in dict.allKeys as! [String] {
+                let dmg: Int = dict[key]?.valueForKey("dmg") as? Int ?? 0
+                let cost: Int = dict[key]?.valueForKey("cost") as? Int ?? 0
+                let ability = Ability(cost: cost, dmg: dmg)
+                moveList.updateValue(ability, forKey: key)
+                println(key)
+            }
+        }
+
+    }
 }

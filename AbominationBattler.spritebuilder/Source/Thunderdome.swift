@@ -24,9 +24,7 @@ class Thunderdome: CCNode {
     
     //all the variables for turn based shit
     var isPlayerTurn: Bool = false
-    var playerMonsterAbilities: [AnyObject]!
-    var enemyMonsterAbilites: [AnyObject]!
-    
+    var isEnemyComputer: Bool = true
     var gameState = UserState()
     var myMonster: Monster!
     var enemyMonster: Monster!
@@ -35,9 +33,11 @@ class Thunderdome: CCNode {
     
     override func onEnter() {
         super.onEnter()
-        if let path = NSBundle.mainBundle().pathForResource("MonsterMoves", ofType: "plist"){
-            let src = NSDictionary(contentsOfFile: path)
-        }
+        myMonster = Monster.generateMonsterFromType(gameState.monsterType)
+        println(myMonster.maxHP)
+        scheduleBlock({ (timer) -> Void in
+            self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
+        }, delay: 2.0)
     }
     
     
@@ -46,4 +46,21 @@ class Thunderdome: CCNode {
         CCDirector.sharedDirector().presentScene(habitat)
     }
 
+    
+    override func update(delta: CCTime) {
+        
+        if !isPlayerTurn && isEnemyComputer{
+            //computer player chooses move here
+            
+        }
+    }
+    
+    func normalAttackSelected() {
+        println("normal attack button pressed")
+    }
+    
+    func specialAttackSelected() {
+        println("special attack button pressed")
+        animationManager.runAnimationsForSequenceNamed("HideMenu")
+    }
 }
