@@ -789,8 +789,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1458,7 +1456,7 @@
 				<key>displayName</key>
 				<string>myMonster</string>
 				<key>memberVarAssignmentName</key>
-				<string>myMonster</string>
+				<string>myMonsterNode</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1536,7 +1534,7 @@
 				<key>displayName</key>
 				<string>enemyMonster</string>
 				<key>memberVarAssignmentName</key>
-				<string>enemyMonster</string>
+				<string>enemyMonsterNode</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1601,6 +1599,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

@@ -15,11 +15,30 @@ class Thunderdome: CCNode {
     weak var myHealth: CCNodeColor!
     weak var myStamina: CCNodeColor!
     
-    weak var myMonster: CCNode!
-    weak var enemyMonster: CCNode!
+    weak var myMonsterNode: CCNode!
+    weak var enemyMonsterNode: CCNode!
     
     weak var myMonsterTag: CCLabelTTF!
     weak var enemyMonsterTag: CCLabelTTF!
+    
+    
+    //all the variables for turn based shit
+    var isPlayerTurn: Bool = false
+    var playerMonsterAbilities: [AnyObject]!
+    var enemyMonsterAbilites: [AnyObject]!
+    
+    var gameState = UserState()
+    var myMonster: Monster!
+    var enemyMonster: Monster!
+    
+    
+    
+    override func onEnter() {
+        super.onEnter()
+        if let path = NSBundle.mainBundle().pathForResource("MonsterMoves", ofType: "plist"){
+            let src = NSDictionary(contentsOfFile: path)
+        }
+    }
     
     
     func forfeit() {

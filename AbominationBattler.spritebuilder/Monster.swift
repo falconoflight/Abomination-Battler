@@ -7,7 +7,26 @@
 //
 
 import Foundation
-class monster {
+
+struct Ability {
+}
+
+class Monster {
+    
+    
+    var maxHP: Int = 0
+    var currentHP: Int = 0
+    var maxStamina: Int = 0
+    var currentStamina: Int = 0
+    
+    var moveList: Dictionary < String, Ability > = Dictionary <String, Ability>()
+    
+    
+    var level: Int = 1
+    var currentXP: Int = 0
+    var xpToLevel: Int = 0
+    var totalXP: Int = 0
+    
     
     
 }

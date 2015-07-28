@@ -15,6 +15,7 @@
 		2EA951E91B5B6A360042B586 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951E81B5B6A360042B586 /* Untitled.swift */; };
 		2EA951F11B608AA10042B586 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951F01B608AA10042B586 /* UserState.swift */; };
 		2EA951F41B6694590042B586 /* Thunderdome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA951F31B6694590042B586 /* Thunderdome.swift */; };
+		2EA951F61B67F9B50042B586 /* MonsterMoves.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EA951F51B67F9B50042B586 /* MonsterMoves.plist */; };
 		5B121030197484FA004C1E1D /* AbominationBattlerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* AbominationBattlerActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -164,6 +165,7 @@
 		2EA951E81B5B6A360042B586 /* Untitled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Untitled.swift; path = Source/Untitled.swift; sourceTree = "<group>"; };
 		2EA951F01B608AA10042B586 /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserState.swift; path = Source/UserState.swift; sourceTree = "<group>"; };
 		2EA951F31B6694590042B586 /* Thunderdome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Thunderdome.swift; path = Source/Thunderdome.swift; sourceTree = "<group>"; };
+		2EA951F51B67F9B50042B586 /* MonsterMoves.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MonsterMoves.plist; path = Source/MonsterMoves.plist; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				2E8E47071B5B35B000A4093E /* Habitat.swift */,
 				2EA951F31B6694590042B586 /* Thunderdome.swift */,
+				2EA951F51B67F9B50042B586 /* MonsterMoves.plist */,
 				2EA951F01B608AA10042B586 /* UserState.swift */,
 				2EA951E61B5B65760042B586 /* Town.swift */,
 				2EA951E41B5B64B70042B586 /* BattleArena.swift */,
@@ -763,6 +766,7 @@
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				2EA951F61B67F9B50042B586 /* MonsterMoves.plist in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
