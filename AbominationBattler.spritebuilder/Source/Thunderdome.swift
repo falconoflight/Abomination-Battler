@@ -34,10 +34,14 @@ class Thunderdome: CCNode {
     override func onEnter() {
         super.onEnter()
         myMonster = Monster.generateMonsterFromType(gameState.monsterType)
+        let mySprite = CCBReader.load(myMonster.monsterType)
+        myMonsterNode.addChild(mySprite)
         println(myMonster.maxHP)
-        scheduleBlock({ (timer) -> Void in
-            self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
-        }, delay: 2.0)
+        
+        prepareEnemy()
+        //scheduleBlock({ (timer) -> Void in
+         //   self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
+        //}, delay: 2.0)
     }
     
     
@@ -62,5 +66,30 @@ class Thunderdome: CCNode {
     func specialAttackSelected() {
         println("special attack button pressed")
         animationManager.runAnimationsForSequenceNamed("HideMenu")
+    }
+    
+    func prepareEnemy() {
+        if isEnemyComputer {
+            var type: String
+            let rand = arc4random()%5
+            switch rand {
+            case 0:
+                type = "Red"
+            case 1:
+                type = "Yellow"
+            case 2:
+                type = "Green"
+            case 3:
+                type = "Blue"
+            default:
+                type = "Purple"
+            }
+            let monster = Monster.generateMonsterFromType(type)
+            let enemySprite = CCBReader.load(type)
+            //enemyMonsterNode = enemySprite
+            enemyMonster = monster
+            enemyMonsterNode.addChild(enemySprite)
+            println(type)
+        }
     }
 }
