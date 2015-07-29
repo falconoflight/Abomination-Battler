@@ -3,13 +3,45 @@
 <plist version="1.0">
 <dict>
 	<key>Purple</key>
-	<dict/>
+	<dict>
+		<key>Bash</key>
+		<dict>
+			<key>cost</key>
+			<integer>5</integer>
+			<key>dmg</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
 	<key>Blue</key>
-	<dict/>
+	<dict>
+		<key>Bash</key>
+		<dict>
+			<key>cost</key>
+			<integer>5</integer>
+			<key>dmg</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
 	<key>Green</key>
-	<dict/>
+	<dict>
+		<key>Bash</key>
+		<dict>
+			<key>cost</key>
+			<integer>5</integer>
+			<key>dmg</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
 	<key>Yellow</key>
-	<dict/>
+	<dict>
+		<key>Bash</key>
+		<dict>
+			<key>cost</key>
+			<integer>5</integer>
+			<key>dmg</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
 	<key>Red</key>
 	<dict>
 		<key>Fireball</key>

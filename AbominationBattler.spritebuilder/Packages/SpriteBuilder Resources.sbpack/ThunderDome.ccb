@@ -1125,8 +1125,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1656,8 +1654,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>100</real>
-							<real>100</real>
+							<real>300</real>
+							<real>10</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -1680,8 +1678,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>3</real>
-							<real>0.090000003576278687</real>
+							<real>1</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1755,8 +1753,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>100</real>
-							<real>100</real>
+							<real>300</real>
+							<real>10</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -1779,8 +1777,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>3</real>
-							<real>0.090000003576278687</real>
+							<real>1</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1840,8 +1838,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>55.738742828369141</real>
-							<real>37.391571044921875</real>
+							<real>82.818275451660156</real>
+							<real>36.009368896484375</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1854,8 +1852,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>100</real>
-							<real>100</real>
+							<real>225</real>
+							<real>10</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -1878,8 +1876,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>2.5207953453063965</real>
-							<real>0.090000003576278687</real>
+							<real>1</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1906,6 +1904,8 @@
 						<real>1</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1953,8 +1953,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>100</real>
-							<real>100</real>
+							<real>225</real>
+							<real>10</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -1977,8 +1977,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>2.5690293312072754</real>
-							<real>0.089782394468784332</real>
+							<real>1</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>

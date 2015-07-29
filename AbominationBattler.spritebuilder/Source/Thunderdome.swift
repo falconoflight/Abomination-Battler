@@ -39,6 +39,12 @@ class Thunderdome: CCNode {
         println(myMonster.maxHP)
         
         prepareEnemy()
+        
+        myMonster.currentHP = myMonster.maxHP
+        myMonster.currentStamina = myMonster.maxStamina
+        enemyMonster.currentHP = enemyMonster.maxHP
+        enemyMonster.currentStamina = enemyMonster.maxStamina
+        
         //scheduleBlock({ (timer) -> Void in
          //   self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
         //}, delay: 2.0)
@@ -55,8 +61,34 @@ class Thunderdome: CCNode {
         
         if !isPlayerTurn && isEnemyComputer{
             //computer player chooses move here
+            let ability = enemyMonster.chooseRandomAbility()
+            applyAbility(ability, fromMonster: enemyMonster, toMonster: myMonster)
+            isPlayerTurn = !isPlayerTurn
+            
+        
             
         }
+    }
+    
+    func applyAbility(ability: Ability, fromMonster: Monster, toMonster: Monster) {
+            fromMonster.currentStamina -= ability.cost
+            let staminaRatio = Float(fromMonster.currentStamina)/Float(fromMonster.maxStamina)
+        let staminaAction = CCActionScaleTo(duration: 0.2, scaleX: staminaRatio, scaleY: 1.0)
+        
+        
+            toMonster.currentHP -= ability.dmg
+        let healthRatio = Float(toMonster.currentHP)/Float(toMonster.maxHP)
+        let hurtAction = CCActionScaleTo(duration: 0.2, scaleX: healthRatio, scaleY: 1.0)
+        
+        if isPlayerTurn {
+            myStamina.runAction(staminaAction)
+            enemyHealth.runAction(hurtAction)
+        }
+        else {
+            enemyStamina.runAction(staminaAction)
+            myHealth.runAction(hurtAction)
+        }
+        println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
     }
     
     func normalAttackSelected() {
