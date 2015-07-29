@@ -1904,8 +1904,6 @@
 						<real>1</real>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -2642,7 +2640,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>normalAttackSelected</string>
+									<string>attackSelected:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -2968,7 +2966,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>specialAttackSelected</string>
+									<string>attackSelected:</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -3013,7 +3011,7 @@
 								<string>String</string>
 								<key>value</key>
 								<array>
-									<string>Title</string>
+									<string>Title2</string>
 									<false/>
 								</array>
 							</dict>
@@ -3223,6 +3221,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

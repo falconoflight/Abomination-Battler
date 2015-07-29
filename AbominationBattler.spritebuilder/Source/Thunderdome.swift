@@ -21,6 +21,9 @@ class Thunderdome: CCNode {
     weak var myMonsterTag: CCLabelTTF!
     weak var enemyMonsterTag: CCLabelTTF!
     
+    weak var normalAttackButton: CCButton!
+    weak var specialAttackButton: CCButton!
+    
     
     //all the variables for turn based shit
     var isPlayerTurn: Bool = false
@@ -44,6 +47,9 @@ class Thunderdome: CCNode {
         myMonster.currentStamina = myMonster.maxStamina
         enemyMonster.currentHP = enemyMonster.maxHP
         enemyMonster.currentStamina = enemyMonster.maxStamina
+        
+        normalAttackButton.title = myMonster.moveList[0].name
+        specialAttackButton.title = myMonster.moveList[2].name
         
         //scheduleBlock({ (timer) -> Void in
          //   self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
@@ -91,14 +97,38 @@ class Thunderdome: CCNode {
         println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
     }
     
-    func normalAttackSelected() {
-        println("normal attack button pressed")
+    func toAttack(){
+        animationManager.runAnimationsForSequenceNamed("ShowMenu")
+
+    }
+    //not sure how this is working if it is
+    func attackSelected(button: CCButton){
+        var currentAttack: Ability = myMonster.moveList[1]
+        
+        for ability in myMonster.moveList {
+            if ability.name == button.title {
+                currentAttack = ability
+                }
+        }
+        println(button.title)
+        animationManager.runAnimationsForSequenceNamed("HideMenu")
+        isPlayerTurn = false
+        applyAbility(currentAttack, fromMonster: myMonster, toMonster: enemyMonster)
+        
     }
     
-    func specialAttackSelected() {
-        println("special attack button pressed")
-        animationManager.runAnimationsForSequenceNamed("HideMenu")
-    }
+//    func normalAttackSelected() {
+//        
+//        println("normal attack button pressed")
+//        animationManager.runAnimationsForSequenceNamed("HideMenu")
+//
+//    }
+//    
+//    func specialAttackSelected() {
+//        
+//        println("special attack button pressed")
+//        animationManager.runAnimationsForSequenceNamed("HideMenu")
+//    }
     
     func prepareEnemy() {
         if isEnemyComputer {

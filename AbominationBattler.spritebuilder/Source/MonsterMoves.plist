@@ -44,13 +44,6 @@
 	</dict>
 	<key>Red</key>
 	<dict>
-		<key>Fireball</key>
-		<dict>
-			<key>cost</key>
-			<integer>10</integer>
-			<key>dmg</key>
-			<integer>8</integer>
-		</dict>
 		<key>Bash</key>
 		<dict>
 			<key>cost</key>
@@ -64,6 +57,13 @@
 			<integer>2</integer>
 			<key>def</key>
 			<integer>4</integer>
+		</dict>
+		<key>Fireball</key>
+		<dict>
+			<key>cost</key>
+			<integer>10</integer>
+			<key>dmg</key>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>
