@@ -9,16 +9,16 @@
 
 
 class Town: CCNode {
-    
-   // func toArena() {
-     //   let toArena = CCBReader.loadAsScene("BattleArena")
-      //  CCDirector.sharedDirector().presentScene(toArena)
-    //}
-    
-    //func habitat() {
-      //  let habitat = CCBReader.loadAsScene("Habitat")
-       // CCDirector.sharedDirector().presentScene(habitat)
-    //}
+//    
+//    func toArena() {
+//        let toArena = CCBReader.loadAsScene("BattleArena")
+//        CCDirector.sharedDirector().presentScene(toArena)
+//    }
+//    
+//    func habitat() {
+//        let habitat = CCBReader.loadAsScene("Habitat")
+//        CCDirector.sharedDirector().presentScene(habitat)
+//    }
     
 
 }

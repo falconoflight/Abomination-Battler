@@ -218,7 +218,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Chalkduster</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -227,7 +227,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>22</real>
+							<real>50</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -670,7 +670,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -679,7 +679,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>17</real>
+							<real>30</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -797,6 +797,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -875,8 +877,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

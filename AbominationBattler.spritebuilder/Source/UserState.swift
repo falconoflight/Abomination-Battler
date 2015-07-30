@@ -42,12 +42,12 @@ class UserState: NSUserDefaults {
         }
     }
 
-    
-      //  var highScore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {
-       //     didSet {
-         //       NSUserDefaults.standardUserDefaults().setInteger(highScore, forKey:"myHighScore")
-           //     NSUserDefaults.standardUserDefaults().synchronize()
-            //}
-       // }
+//    
+//        var highScore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {
+//            didSet {
+//                NSUserDefaults.standardUserDefaults().setInteger(highScore, forKey:"myHighScore")
+//                NSUserDefaults.standardUserDefaults().synchronize()
+//            }
+//        }
     }
 

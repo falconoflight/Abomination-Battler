@@ -336,7 +336,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -345,7 +345,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>17</real>
+							<real>28</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -662,7 +662,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -671,7 +671,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>17</real>
+							<real>28</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -801,8 +801,6 @@
 				<string></string>
 				<key>displayName</key>
 				<string>Item</string>
-				<key>hidden</key>
-				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -832,7 +830,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>437.99993896484375</real>
+							<real>421.49993896484375</real>
 							<real>44</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -998,7 +996,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1007,7 +1005,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>17</real>
+							<real>28</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1158,7 +1156,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>525</real>
+							<real>518</real>
 							<real>44</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1324,7 +1322,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1333,7 +1331,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>17</real>
+							<real>28</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1640,8 +1638,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>7.8182787895202637</real>
-							<real>20.873992919921875</real>
+							<real>313</real>
+							<real>23.009368896484375</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1667,8 +1665,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -1706,6 +1704,8 @@
 						<real>1</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1740,7 +1740,7 @@
 						<key>value</key>
 						<array>
 							<real>257.5</real>
-							<real>142.96658325195312</real>
+							<real>147.96658325195312</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1767,7 +1767,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -1838,8 +1838,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>82.818275451660156</real>
-							<real>36.009368896484375</real>
+							<real>307</real>
+							<real>38.009368896484375</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1865,8 +1865,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -1938,7 +1938,7 @@
 						<key>value</key>
 						<array>
 							<real>257.5</real>
-							<real>126.78663635253906</real>
+							<real>132.78663635253906</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1965,7 +1965,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -2084,7 +2084,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2093,7 +2093,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>20</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -2304,7 +2304,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>REBUFFED.TTF</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2313,7 +2313,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>20</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -2324,6 +2324,19 @@
 						<string>Check</string>
 						<key>value</key>
 						<false/>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<real>0.0</real>
+							<real>1</real>
+						</array>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2768,7 +2781,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>REBUFFED.TTF</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2777,7 +2790,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>17</real>
+									<real>27</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -3094,7 +3107,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>REBUFFED.TTF</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -3103,7 +3116,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>17</real>
+									<real>27</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -3221,8 +3234,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -3256,7 +3267,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>-102</real>
+							<real>-150</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>0</integer>
@@ -3306,9 +3317,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.20999999344348907</real>
-							<real>0.64999997615814209</real>
-							<real>0.87000000476837158</real>
+							<real>0.0</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -3450,7 +3461,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.20000000298023224</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

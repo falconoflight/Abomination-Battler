@@ -19,9 +19,19 @@ class Monster {
     
     
     var maxHP: Int = 0
-    var currentHP: Int = 0
+    var currentHP: Int = 0 {
+        didSet{
+            currentHP = Int(clampf(Float(currentHP), 0, Float(maxHP)))
+        }
+    }
+    
     var maxStamina: Int = 0
-    var currentStamina: Int = 0
+    var currentStamina: Int = 0 {
+        didSet{
+             currentStamina = Int(clampf(Float(currentStamina), 0, Float(maxStamina)))
+        }
+    }
+    
     
     var moveList: [Ability] = []
     

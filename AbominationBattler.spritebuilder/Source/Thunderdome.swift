@@ -95,13 +95,17 @@ class Thunderdome: CCNode {
             myHealth.runAction(hurtAction)
         }
         println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
+        if toMonster.currentHP == 0 {
+            println("\(toMonster.monsterType) has fainted!")
+        }
     }
     
+    //is myMonster actually attacking??????
     func toAttack(){
         animationManager.runAnimationsForSequenceNamed("ShowMenu")
 
     }
-    //not sure how this is working if it is
+    //not sure how this is working if it is- buttons
     func attackSelected(button: CCButton){
         var currentAttack: Ability = myMonster.moveList[1]
         

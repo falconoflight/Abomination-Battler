@@ -75,25 +75,25 @@ class Habitat: CCNode {
         let toThunderdome = CCBReader.loadAsScene("Thunderdome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
     }
-    
-    //func toArena() {
-        //let toArena = CCBReader.loadAsScene("BattleArena")
-        //CCDirector.sharedDirector().presentScene(toArena)
-    //}
+//    
+//    func toArena() {
+//        let toArena = CCBReader.loadAsScene("BattleArena")
+//        CCDirector.sharedDirector().presentScene(toArena)
+//    }
     
     func happyUp() {
         boredom = 1000
     }
     
-    //func stats() {
-      //  let habitat = CCBReader.loadAsScene("Habitat")
-    
-   // }
-    
-    //func items() {
-     //   let habitat = CCBReader.loadAsScene("Habitat")
-    
-    //}
+//    func stats() {
+//        let habitat = CCBReader.loadAsScene("Habitat")
+//    
+//    }
+//    
+//    func items() {
+//        let habitat = CCBReader.loadAsScene("Habitat")
+//    
+//    }
     
     func Town() {
         let Town = CCBReader.loadAsScene("Town")
