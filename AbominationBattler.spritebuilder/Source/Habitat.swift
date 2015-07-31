@@ -22,22 +22,19 @@ class Habitat: CCNode {
     var meterTime: Float = 1000
     
     
-    var timeLeft: Float = 0 {
+    var timeLeft: Float = 1000 {
         didSet {
             timeLeft = max(min(timeLeft, meterTime), 0)
             hungerBar.scaleX = timeLeft / Float(meterTime)
         }
     }
     
-    var boredom: Float = 0 {
+    var boredom: Float = 1000 {
         didSet {
             boredom = max(min(boredom, meterTime),0)
             happyBar.scaleX = boredom / Float(meterTime)
         }
     }
-    
-    
-        
     
     func didLoadFromCCB() {
         userInteractionEnabled = true
@@ -72,7 +69,7 @@ class Habitat: CCNode {
 
     
     func toThunderdome(){
-        let toThunderdome = CCBReader.loadAsScene("Thunderdome")
+        let toThunderdome = CCBReader.loadAsScene("ThunderDome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
     }
 //    

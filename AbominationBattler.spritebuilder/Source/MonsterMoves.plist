@@ -11,6 +11,13 @@
 			<key>dmg</key>
 			<integer>10</integer>
 		</dict>
+		<key>People-Eater</key>
+		<dict>
+			<key>cost</key>
+			<integer>10</integer>
+			<key>dmg</key>
+			<integer>15</integer>
+		</dict>
 	</dict>
 	<key>Blue</key>
 	<dict>
@@ -20,6 +27,13 @@
 			<integer>5</integer>
 			<key>dmg</key>
 			<integer>10</integer>
+		</dict>
+		<key>Bubbles</key>
+		<dict>
+			<key>cost</key>
+			<integer>10</integer>
+			<key>dmg</key>
+			<integer>15</integer>
 		</dict>
 	</dict>
 	<key>Green</key>
@@ -31,6 +45,13 @@
 			<key>dmg</key>
 			<integer>10</integer>
 		</dict>
+		<key>Trample</key>
+		<dict>
+			<key>cost</key>
+			<integer>10</integer>
+			<key>dmg</key>
+			<integer>15</integer>
+		</dict>
 	</dict>
 	<key>Yellow</key>
 	<dict>
@@ -40,6 +61,13 @@
 			<integer>5</integer>
 			<key>dmg</key>
 			<integer>10</integer>
+		</dict>
+		<key>Thunder-Smash</key>
+		<dict>
+			<key>cost</key>
+			<integer>10</integer>
+			<key>dmg</key>
+			<integer>15</integer>
 		</dict>
 	</dict>
 	<key>Red</key>

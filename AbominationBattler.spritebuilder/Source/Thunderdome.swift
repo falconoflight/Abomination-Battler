@@ -51,10 +51,10 @@ class Thunderdome: CCNode {
         
         normalAttackButton.title = myMonster.moveList[0].name
         specialAttackButton.title = myMonster.moveList[1].name
-        
-        //scheduleBlock({ (timer) -> Void in
-         //   self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
-        //}, delay: 2.0)
+//        
+//        scheduleBlock({ (timer) -> Void in
+//            self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
+//        }, delay: 2.0)
     }
     
     
@@ -98,6 +98,7 @@ class Thunderdome: CCNode {
         println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
         if toMonster.currentHP == 0 {
             println("\(toMonster.monsterType) has fainted!")
+            triggerMatchOver()
         }
     }
     
@@ -139,16 +140,14 @@ class Thunderdome: CCNode {
 //        animationManager.runAnimationsForSequenceNamed("HideMenu")
 //    }
     
-    func isMatchOver() -> Bool {
-        
-        if myMonster.currentHP == 0 || enemyMonster.currentHP == 0 { triggerMatchOver() }
-        
-        return matchOver
-    }
     
     func triggerMatchOver() {
         matchOver = true
        // restartButton.visible = true
+        
+        var matchOverScreen = CCBReader.load("MatchOver", owner: self) as! MatchOver
+        matchOverScreen.winnerNameText!.string = "Blah"
+        self.addChild(matchOverScreen)
     }
     
     func prepareEnemy() {
