@@ -31,6 +31,7 @@ class Thunderdome: CCNode {
     var gameState = UserState()
     var myMonster: Monster!
     var enemyMonster: Monster!
+    var matchOver: Bool = false
     
     
     
@@ -49,7 +50,7 @@ class Thunderdome: CCNode {
         enemyMonster.currentStamina = enemyMonster.maxStamina
         
         normalAttackButton.title = myMonster.moveList[0].name
-        specialAttackButton.title = myMonster.moveList[2].name
+        specialAttackButton.title = myMonster.moveList[1].name
         
         //scheduleBlock({ (timer) -> Void in
          //   self.animationManager.runAnimationsForSequenceNamed("ShowMenu")
@@ -116,9 +117,13 @@ class Thunderdome: CCNode {
         }
         println(button.title)
         animationManager.runAnimationsForSequenceNamed("HideMenu")
-        isPlayerTurn = false
+        //isPlayerTurn = false
         applyAbility(currentAttack, fromMonster: myMonster, toMonster: enemyMonster)
-        
+        scheduleOnce(Selector("toggleTurn"), delay: 1.0)
+    }
+    
+    func toggleTurn() {
+        isPlayerTurn = !isPlayerTurn
     }
     
 //    func normalAttackSelected() {
@@ -133,6 +138,18 @@ class Thunderdome: CCNode {
 //        println("special attack button pressed")
 //        animationManager.runAnimationsForSequenceNamed("HideMenu")
 //    }
+    
+    func isMatchOver() -> Bool {
+        
+        if myMonster.currentHP == 0 || enemyMonster.currentHP == 0 { triggerMatchOver() }
+        
+        return matchOver
+    }
+    
+    func triggerMatchOver() {
+        matchOver = true
+       // restartButton.visible = true
+    }
     
     func prepareEnemy() {
         if isEnemyComputer {

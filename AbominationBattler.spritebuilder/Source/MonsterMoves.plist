@@ -51,19 +51,12 @@
 			<key>dmg</key>
 			<integer>10</integer>
 		</dict>
-		<key>Defend</key>
-		<dict>
-			<key>cost</key>
-			<integer>2</integer>
-			<key>def</key>
-			<integer>4</integer>
-		</dict>
 		<key>Fireball</key>
 		<dict>
 			<key>cost</key>
 			<integer>10</integer>
 			<key>dmg</key>
-			<integer>8</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 </dict>
