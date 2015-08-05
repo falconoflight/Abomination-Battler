@@ -20,17 +20,17 @@ class Habitat: CCNode {
     var monsterSprite: CCSprite!
     var userState = UserState()
     
-    var meterTime: Float = 1000
+    var meterTime: Float = 1000.0
     
     
-    var timeLeft: Float = 1000 {
+    var timeLeft: Float = 1000.0 {
         didSet {
             timeLeft = max(min(timeLeft, meterTime), 0)
             hungerBar.scaleX = timeLeft / Float(meterTime)
         }
     }
     
-    var boredom: Float = 1000 {
+    var boredom: Float = 1000.0 {
         didSet {
             boredom = max(min(boredom, meterTime),0)
             happyBar.scaleX = boredom / Float(meterTime)
@@ -71,7 +71,7 @@ class Habitat: CCNode {
 
     
     func toThunderdome(){
-        let toThunderdome = CCBReader.loadAsScene("ThunderDome")
+        let toThunderdome = CCBReader.loadAsScene("Thunderdome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
     }
 //    

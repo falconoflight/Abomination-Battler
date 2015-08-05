@@ -14,6 +14,7 @@ class MainScene: CCNode {
     func newGame() {
         let newGame = CCBReader.loadAsScene("NewGame")
         CCDirector.sharedDirector().presentScene(newGame)
+    
     }
 
     

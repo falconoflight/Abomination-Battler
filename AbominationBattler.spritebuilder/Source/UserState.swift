@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-class UserState: NSUserDefaults {
+class UserState {
+    
         var name: String = NSUserDefaults.standardUserDefaults().stringForKey("monsterName") ?? "Monster" {
             didSet {
                 NSUserDefaults.standardUserDefaults().setObject(name, forKey:"monsterName")
@@ -28,14 +29,14 @@ class UserState: NSUserDefaults {
         }
     }
     
-    var notHungry: Float = NSUserDefaults.standardUserDefaults().floatForKey("hungerHurts") ?? 1000 {
+    var notHungry: Float = NSUserDefaults.standardUserDefaults().floatForKey("hungerHurts") ?? 1000.0 {
         didSet{
             NSUserDefaults.standardUserDefaults().setFloat(notHungry, forKey: "hungerHurts")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
     
-    var happyMonster: Float = NSUserDefaults.standardUserDefaults().floatForKey("bloodthirsty") ?? 1000 {
+    var happyMonster: Float = NSUserDefaults.standardUserDefaults().floatForKey("bloodthirsty") ?? 1000.0 {
         didSet{
             NSUserDefaults.standardUserDefaults().setFloat(happyMonster, forKey: "bloodthirsty")
             NSUserDefaults.standardUserDefaults().synchronize()
