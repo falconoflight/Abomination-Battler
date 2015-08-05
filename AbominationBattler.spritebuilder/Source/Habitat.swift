@@ -49,10 +49,10 @@ class Habitat: CCNode {
         boredom -= Float(delta)
         
         timeLeft -= Float(delta)
-        if timeLeft == 0 {
-            //tamagachi dies
-            println("gameOver")
-        }
+//        if timeLeft == 0 {
+//            //tamagachi dies
+//            println("gameOver")
+//        }
     }
     
     override func onExit() {

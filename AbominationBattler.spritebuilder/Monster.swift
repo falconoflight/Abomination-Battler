@@ -74,10 +74,10 @@ class Monster {
         }
 
     }
-    
+//  Why does this crash!?!?!?
     func chooseRandomAbility() ->Ability {
         
-        let rand = Int(arc4random())%moveList.count
+        let rand = Int(arc4random_uniform(UInt32(moveList.count)))
         return moveList[rand]
     }
 }

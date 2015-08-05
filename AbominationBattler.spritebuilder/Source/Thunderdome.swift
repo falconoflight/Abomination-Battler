@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-
+//It is broken!!!
 
 class Thunderdome: CCNode {
     
@@ -23,6 +23,7 @@ class Thunderdome: CCNode {
     
     weak var normalAttackButton: CCButton!
     weak var specialAttackButton: CCButton!
+    weak var matchOverScreen: CCNode!
     
     
     //all the variables for turn based shit
@@ -76,6 +77,7 @@ class Thunderdome: CCNode {
             
         }
     }
+//    is something going wrong here? 
     
     func applyAbility(ability: Ability, fromMonster: Monster, toMonster: Monster) {
             fromMonster.currentStamina -= ability.cost
@@ -143,8 +145,8 @@ class Thunderdome: CCNode {
     
     func triggerMatchOver() {
         matchOver = true
-       // restartButton.visible = true
-        
+//        restartButton.visible = true
+
         var matchOverScreen = CCBReader.load("MatchOver", owner: self) as! MatchOver
         matchOverScreen.winnerNameText!.string = "Blah"
         self.addChild(matchOverScreen)
