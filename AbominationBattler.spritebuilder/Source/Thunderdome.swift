@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-//It is broken!!!
+
 
 class Thunderdome: CCNode {
     
@@ -23,6 +23,7 @@ class Thunderdome: CCNode {
     
     weak var normalAttackButton: CCButton!
     weak var specialAttackButton: CCButton!
+    weak var defend: CCButton!
     weak var matchOverScreen: CCNode!
     
     

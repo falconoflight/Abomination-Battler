@@ -25,14 +25,16 @@ class MainScene: CCNode {
         
         if userState.didSummonMonster {
 //            newGameButton.visible = false
-                let habitat = CCBReader.loadAsScene("Habitat")
+
+            let habitat = CCBReader.loadAsScene("Habitat")
                 CCDirector.sharedDirector().presentScene(habitat)
 
+
         }
-        
+//        not quite the effect I wanted below... but it works. you never see the title screen. and if it is uncommented the button doesn't go anywhere
         else {
 //            continueButton.visible = false
-//            func newGame() {
+//            func play() {
                 let newGame = CCBReader.loadAsScene("NewGame")
                 CCDirector.sharedDirector().presentScene(newGame)
                 

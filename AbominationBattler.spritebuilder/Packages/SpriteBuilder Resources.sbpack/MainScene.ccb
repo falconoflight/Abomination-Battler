@@ -74,7 +74,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>-0.17812499403953552</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -330,10 +330,10 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
+							<real>1</real>
 							<real>0.0</real>
 							<real>0.0</real>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -343,7 +343,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>20</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -688,8 +688,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
