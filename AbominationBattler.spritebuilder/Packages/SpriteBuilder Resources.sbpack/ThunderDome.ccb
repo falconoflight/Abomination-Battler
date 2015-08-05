@@ -28,7 +28,16 @@
 	<key>gridspaceWidth</key>
 	<integer>64</integer>
 	<key>guides</key>
-	<array/>
+	<array>
+		<dict>
+			<key>orientation</key>
+			<integer>0</integer>
+			<key>position</key>
+			<real>0.0</real>
+			<key>type</key>
+			<integer>0</integer>
+		</dict>
+	</array>
 	<key>joints</key>
 	<array/>
 	<key>jsControlled</key>
@@ -109,8 +118,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>5.7355594635009766</real>
-							<real>3.8699071407318115</real>
+							<real>5.6840877532958984</real>
+							<real>3.8428621292114258</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1231,8 +1240,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
