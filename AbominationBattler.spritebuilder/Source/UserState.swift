@@ -41,6 +41,21 @@ class UserState: NSUserDefaults {
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
+    
+    var monsterWin: Int = NSUserDefaults.standardUserDefaults().integerForKey("win") ?? 0 {
+        didSet{
+           NSUserDefaults.standardUserDefaults().setInteger(monsterWin, forKey: "win")
+           NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    var monsterLose: Int = NSUserDefaults.standardUserDefaults().integerForKey("loss") ?? 0 {
+        didSet{
+            NSUserDefaults.standardUserDefaults().setInteger(monsterLose, forKey: "loss")
+            NSUserDefaults.standardUserDefaults().synchronize()
+
+        }
+    }
 
 //    
 //        var highScore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {

@@ -15,6 +15,7 @@ class Habitat: CCNode {
     weak var happyButton: CCButton!
     weak var feedButton: CCButton!
     weak var spawnPoint: CCNode!
+    weak var nameTag: CCLabelTTF!
     
     var monsterSprite: CCSprite!
     var userState = UserState()
@@ -43,6 +44,7 @@ class Habitat: CCNode {
         spawnPoint.addChild(monsterSprite)
         timeLeft = userState.notHungry
         boredom = userState.happyMonster
+        nameTag.string = userState.name
     }
     
     override func update(delta: CCTime) {
@@ -83,7 +85,7 @@ class Habitat: CCNode {
     }
     
 //    func stats() {
-//        let habitat = CCBReader.loadAsScene("Habitat")
+//        
 //    
 //    }
 //    
@@ -92,9 +94,9 @@ class Habitat: CCNode {
 //    
 //    }
     
-    func Town() {
-        let Town = CCBReader.loadAsScene("Town")
-        CCDirector.sharedDirector().presentScene(Town)
-    }
-
+//    func Town() {
+//        let Town = CCBReader.loadAsScene("Town")
+//        CCDirector.sharedDirector().presentScene(Town)
+//    }
+//
 }

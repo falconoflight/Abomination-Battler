@@ -45,6 +45,9 @@ class Thunderdome: CCNode {
         
         prepareEnemy()
         
+        myMonsterTag.string = gameState.name
+//        enemyMonsterTag.string = enemyMonster
+        
         myMonster.currentHP = myMonster.maxHP
         myMonster.currentStamina = myMonster.maxStamina
         enemyMonster.currentHP = enemyMonster.maxHP
@@ -148,7 +151,7 @@ class Thunderdome: CCNode {
 //        restartButton.visible = true
 
         var matchOverScreen = CCBReader.load("MatchOver", owner: self) as! MatchOver
-        matchOverScreen.winnerNameText!.string = "Blah"
+        matchOverScreen.winnerNameText!.string = "Blah"  //how to generate whose move is it? or who fainted
         self.addChild(matchOverScreen)
     }
     
