@@ -2471,11 +2471,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>433.21505737304688</real>
-							<real>360.99063110351562</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<real>0.30000001192092896</real>
+							<real>0.10000000149011612</real>
+							<integer>2</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
