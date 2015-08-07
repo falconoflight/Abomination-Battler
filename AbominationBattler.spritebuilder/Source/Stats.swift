@@ -8,20 +8,23 @@
 
 import Foundation
 class Stats  {
-weak var win: CCLabelTTF?
-weak var loss: CCLabelTTF?
-weak var healthStat: CCLabelTTF?
-weak var staminaStat: CCLabelTTF?
+    weak var win: CCLabelTTF?
+    weak var loss: CCLabelTTF?
+    weak var healthStat: CCLabelTTF?
+    weak var staminaStat: CCLabelTTF?
 
-weak var attack1: CCLabelTTF?
-weak var attack: CCLabelTTF?
+    weak var attack1: CCLabelTTF?
+    weak var attack: CCLabelTTF?
 
-weak var closeButton: CCButton?
+    weak var closeButton: CCButton?
+    
+    var userState = UserState()
+    
+    //win = userState.monsterWin
 
 
-
-func close(){
-    let toHabitat = CCBReader.loadAsScene("Habitat")
-    CCDirector.sharedDirector().presentScene(toHabitat)
-}
+    func close(){
+        let toHabitat = CCBReader.loadAsScene("Habitat")
+        CCDirector.sharedDirector().presentScene(toHabitat)
+    }
 }
