@@ -25,6 +25,7 @@ class Thunderdome: CCNode {
     weak var specialAttackButton: CCButton!
     weak var defend: CCButton!
     weak var matchOverScreen: CCNode!
+    weak var commandLine: CCLabelTTF!
     
     
     //all the variables for turn based shit
@@ -100,8 +101,10 @@ class Thunderdome: CCNode {
             myHealth.runAction(hurtAction)
         }
         println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
+        commandLine.string = "\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)"
         if toMonster.currentHP == 0  {
             println("\(toMonster.monsterType) has fainted!")
+            commandLine.string = "\(toMonster.monsterType) has fainted!"
             triggerMatchOver()
         }
     }
@@ -149,12 +152,22 @@ class Thunderdome: CCNode {
 //        defend
 //    }
     
+    
+    
+    
     func triggerMatchOver() {
         matchOver = true
+        var victorString = ""
+        if isPlayerTurn {
+            victorString = myMonsterTag.string
+        }
+        else {
+            victorString = enemyMonsterTag.string
+        }
 //        restartButton.visible = true
 
         var matchOverScreen = CCBReader.load("MatchOver", owner: self) as! MatchOver
-        matchOverScreen.winnerNameText!.string = ""//\()"  //how to generate whose move is it? or who fainted
+        matchOverScreen.winnerNameText!.string = victorString
         self.addChild(matchOverScreen)
     }
     

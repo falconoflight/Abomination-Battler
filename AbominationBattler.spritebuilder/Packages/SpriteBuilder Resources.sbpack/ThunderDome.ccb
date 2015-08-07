@@ -294,8 +294,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>50.337631225585938</real>
-									<real>50.337631225585938</real>
+									<real>0.0</real>
+									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -308,8 +308,8 @@
 								<string>Point</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.0</real>
+									<real>0.0</real>
 								</array>
 							</dict>
 							<dict>
@@ -332,7 +332,7 @@
 								<string>Text</string>
 								<key>value</key>
 								<array>
-									<string></string>
+									<string>Command Line</string>
 									<false/>
 								</array>
 							</dict>
@@ -383,8 +383,8 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>100</real>
+									<real>100</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -481,6 +481,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -559,9 +561,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
+							<real>0.40000000596046448</real>
 							<real>1</real>
-							<real>1</real>
-							<real>1</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -2658,8 +2660,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
