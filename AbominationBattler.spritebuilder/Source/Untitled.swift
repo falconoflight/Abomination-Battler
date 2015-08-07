@@ -24,8 +24,8 @@ class Untitled: CCNode {
     
     func ok() {
         
-        stateObject.notHungry = 1000.0
-        stateObject.happyMonster = 1000.0
+        stateObject.notHungry = 750.0
+        stateObject.happyMonster = 750.0
         
         var monsterName = monsterNaming.string
         

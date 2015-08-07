@@ -57,15 +57,15 @@ class UserState {
 
         }
     }
-//    
-//    should I implement this?
-//    var monsterForfeit: Int = NSUserDefaults.standardUserDefaults().integerForKey("forfeit") ?? 0 {
-//        didSet{
-//            NSUserDefaults.standardUserDefaults().setInteger(monsterForfeit, forKey: "forfeit")
-//            NSUserDefaults.standardUserDefaults().synchronize()
-//            
-//        }
-//    }
+    
+    
+    var monsterXP: Int = NSUserDefaults.standardUserDefaults().integerForKey("XP") ?? 0 {
+        didSet{
+            NSUserDefaults.standardUserDefaults().setInteger(monsterXP, forKey: "XP")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+        }
+    }
 
 
 //    

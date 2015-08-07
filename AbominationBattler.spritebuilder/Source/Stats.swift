@@ -15,6 +15,7 @@ class Stats  {
 
     weak var attack1: CCLabelTTF?
     weak var attack: CCLabelTTF?
+    weak var xp: CCLabelTTF?
 
     weak var closeButton: CCButton?
     
