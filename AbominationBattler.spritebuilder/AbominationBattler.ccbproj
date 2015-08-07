@@ -82,8 +82,6 @@
 		<dict/>
 		<key>background_castle-silhouette-background</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -171,8 +169,6 @@
 		</dict>
 		<key>character_monsters</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>

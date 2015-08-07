@@ -27,8 +27,15 @@ class NewGame: CCNode {
 // makes all the monster choosing buttons one selector with the argument CCButton  
     func previewMonster(button: CCButton) {
         println("I see my \(button.name) monster!")
-        menuStatBlock.string = button.name // needs the stat code shit attached to button
+        menuStatBlock.string = button.name //+ // needs the stat code shit attached to button
         lastMonsterPicked = button.name
     }
     
+//  func monsterStart() {
+//    if let path = NSBundle.mainBundle().pathForResource("MonsterStart", ofType: "plist"){
+//        let src = NSDictionary(contentsOfFile: path)
+//        let dict = src?[]  as! NSDictionary
+//    
+//    }
+//}
 }

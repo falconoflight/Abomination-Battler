@@ -9,11 +9,11 @@
 
 
 class BattleArena: CCNode {
-    
-    func Town() {
-        let Town = CCBReader.loadAsScene("Town")
-        CCDirector.sharedDirector().presentScene(Town)
-    }
-
+//    
+//    func Town() {
+//        let Town = CCBReader.loadAsScene("Town")
+//        CCDirector.sharedDirector().presentScene(Town)
+//    }
+//
 
 }

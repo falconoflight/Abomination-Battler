@@ -85,7 +85,7 @@ class Habitat: CCNode {
     }
     
 //    func stats() {
-//        
+//    this is where I pull up a stats either popup or something    
 //    
 //    }
 //    

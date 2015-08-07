@@ -47,7 +47,7 @@ class Thunderdome: CCNode {
         prepareEnemy()
         
         myMonsterTag.string = gameState.name
-//        enemyMonsterTag.string = enemyMonster
+//        enemyMonsterTag
         
         myMonster.currentHP = myMonster.maxHP
         myMonster.currentStamina = myMonster.maxStamina
@@ -71,17 +71,15 @@ class Thunderdome: CCNode {
     
     override func update(delta: CCTime) {
         
-        if !isPlayerTurn && isEnemyComputer{
+        if !isPlayerTurn && isEnemyComputer && enemyMonster.currentHP > 0 {
             //computer player chooses move here
             let ability = enemyMonster.chooseRandomAbility()
             applyAbility(ability, fromMonster: enemyMonster, toMonster: myMonster)
             isPlayerTurn = !isPlayerTurn
             
-        
-            
         }
     }
-//    is something going wrong here? 
+
     
     func applyAbility(ability: Ability, fromMonster: Monster, toMonster: Monster) {
             fromMonster.currentStamina -= ability.cost
@@ -97,18 +95,18 @@ class Thunderdome: CCNode {
             myStamina.runAction(staminaAction)
             enemyHealth.runAction(hurtAction)
         }
-        else {
+        else { 
             enemyStamina.runAction(staminaAction)
             myHealth.runAction(hurtAction)
         }
         println("\(fromMonster.monsterType) used \(ability.name) on \(toMonster.monsterType)")
-        if toMonster.currentHP == 0 {
+        if toMonster.currentHP == 0  {
             println("\(toMonster.monsterType) has fainted!")
             triggerMatchOver()
         }
     }
     
-    //is myMonster actually attacking??????
+    
     func toAttack(){
         animationManager.runAnimationsForSequenceNamed("ShowMenu")
 
@@ -126,7 +124,7 @@ class Thunderdome: CCNode {
         animationManager.runAnimationsForSequenceNamed("HideMenu")
         //isPlayerTurn = false
         applyAbility(currentAttack, fromMonster: myMonster, toMonster: enemyMonster)
-        scheduleOnce(Selector("toggleTurn"), delay: 1.0)
+        scheduleOnce(Selector("toggleTurn"), delay: 2.0)
     }
     
     func toggleTurn() {
@@ -146,13 +144,17 @@ class Thunderdome: CCNode {
 //        animationManager.runAnimationsForSequenceNamed("HideMenu")
 //    }
     
+//    
+//    func toDefend() {
+//        defend
+//    }
     
     func triggerMatchOver() {
         matchOver = true
 //        restartButton.visible = true
 
         var matchOverScreen = CCBReader.load("MatchOver", owner: self) as! MatchOver
-        matchOverScreen.winnerNameText!.string = "Blah"  //how to generate whose move is it? or who fainted
+        matchOverScreen.winnerNameText!.string = ""//\()"  //how to generate whose move is it? or who fainted
         self.addChild(matchOverScreen)
     }
     
@@ -177,6 +179,8 @@ class Thunderdome: CCNode {
             //enemyMonsterNode = enemySprite
             enemyMonster = monster
             enemyMonsterNode.addChild(enemySprite)
+            enemyMonsterTag.string = type
+
             println(type)
         }
     }
