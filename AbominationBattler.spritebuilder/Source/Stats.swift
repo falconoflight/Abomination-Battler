@@ -21,7 +21,7 @@ class Stats: CCNode  {
     
     var userState = UserState()
     
-    //win = userState.monsterWin
+  
 
 
     func close(){
