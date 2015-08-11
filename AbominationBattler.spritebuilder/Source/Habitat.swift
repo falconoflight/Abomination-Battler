@@ -16,6 +16,7 @@ class Habitat: CCNode {
     weak var feedButton: CCButton!
     weak var spawnPoint: CCNode!
     weak var nameTag: CCLabelTTF!
+    weak var statButton: CCButton!
     
     var monsterSprite: CCSprite!
     var userState = UserState()
@@ -84,11 +85,11 @@ class Habitat: CCNode {
         boredom = 1000
     }
     
-//    func stats() {
-//    this is where I pull up a stats either popup or something    
-//    
-//    }
-//    
+    func stats() {
+    var stat = CCBReader.load("Stats", owner: self) as! Stats
+    self.addChild(stat)
+    }
+//
 //    func items() {
 //        let habitat = CCBReader.loadAsScene("Habitat")
 //    

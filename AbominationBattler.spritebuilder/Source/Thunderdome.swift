@@ -70,7 +70,7 @@ class Thunderdome: CCNode {
     }
 
     
-    override func update(delta: CCTime) {
+    override func update(delta: CCTime) { //add check to for who has first turn and print it in the command line
         
         if !isPlayerTurn && isEnemyComputer && enemyMonster.currentHP > 0 {
             //computer player chooses move here

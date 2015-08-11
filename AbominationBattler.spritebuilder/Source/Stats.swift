@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Stats  {
+class Stats: CCNode  {
     weak var win: CCLabelTTF?
     weak var loss: CCLabelTTF?
     weak var healthStat: CCLabelTTF?
