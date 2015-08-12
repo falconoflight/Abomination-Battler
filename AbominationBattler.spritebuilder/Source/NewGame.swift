@@ -12,12 +12,11 @@ class NewGame: CCNode {
     
     weak var menuStatBlock : CCLabelTTF!
     var lastMonsterPicked: String!
-    
+    var stateObject = UserState()
+    weak var nameType: CCLabelTTF!
     
     func untitled() {
        
-        var stateObject = UserState()
-
         stateObject.monsterType = lastMonsterPicked
         
         let untitled = CCBReader.loadAsScene("Untitled")
@@ -27,8 +26,16 @@ class NewGame: CCNode {
 // makes all the monster choosing buttons one selector with the argument CCButton  
     func previewMonster(button: CCButton) {
         println("I see my \(button.name) monster!")
-        menuStatBlock.string = button.name + " " +  //+ // needs the stat code shit attached to button
-        lastMonsterPicked = button.name
+        
+        if let path = NSBundle.mainBundle().pathForResource("MonsterStart", ofType: "plist"){
+            let src = NSDictionary(contentsOfFile: path)
+            let monsterInfo = src?[button.name]  as! NSDictionary
+            let startHP = monsterInfo["startHP"] as! Int
+            let startStamina = monsterInfo["startStamina"] as! Int
+            nameType.string = button.name
+            menuStatBlock.string = "Health: \(startHP)" + " " + "Stamina: \(startStamina)"
+            lastMonsterPicked = button.name
+        }
     }
     
 //  func monsterStart() {
@@ -37,5 +44,4 @@ class NewGame: CCNode {
 //        let dict = src?[]  as! NSDictionary
 //    
 //    }
-//}
 }

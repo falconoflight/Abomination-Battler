@@ -489,8 +489,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1026,7 +1024,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Defend</string>
+							<string>Heal</string>
 							<false/>
 						</array>
 					</dict>
@@ -1236,6 +1234,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
