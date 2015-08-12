@@ -21,8 +21,23 @@ class Stats: CCNode  {
     
     var userState = UserState()
     
-  
-
+//  insert all the stats here
+    override func onEnter() {
+        // read from monster start plist
+        if let path = NSBundle.mainBundle().pathForResource("MonsterStart", ofType: "plist"){
+            let src = NSDictionary(contentsOfFile: path)
+            let monsterType = userState.monsterType
+            let monsterInfo = src?[monsterType]  as! NSDictionary
+            let startHP = monsterInfo["startHP"] as! Int
+            let startStamina = monsterInfo["startStamina"] as! Int
+            
+            healthStat?.string = "\(startHP)"
+            staminaStat?.string = "\(startStamina)"
+        }
+        
+        win?.string = "\(userState.monsterWin)"
+        loss?.string = "\(userState.monsterLose)"
+    }
 
     func close(){
         let toHabitat = CCBReader.loadAsScene("Habitat")
