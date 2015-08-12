@@ -373,7 +373,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>Play</string>
 				<key>memberVarAssignmentName</key>
 				<string>playButton</string>
 				<key>memberVarAssignmentType</key>
@@ -707,21 +707,13 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>Credits</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
-					<dict>
-						<key>name</key>
-						<string>visible</string>
-						<key>type</key>
-						<string>Check</string>
-						<key>value</key>
-						<false/>
-					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -1043,7 +1035,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>Continue</string>
 				<key>memberVarAssignmentName</key>
 				<string>continueButton</string>
 				<key>memberVarAssignmentType</key>
@@ -1369,7 +1361,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>New Game</string>
 				<key>memberVarAssignmentName</key>
 				<string>newGameButton</string>
 				<key>memberVarAssignmentType</key>

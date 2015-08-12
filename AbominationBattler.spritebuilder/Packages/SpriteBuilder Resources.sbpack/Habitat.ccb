@@ -482,7 +482,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>2</integer>
+						<integer>6</integer>
 						<key>baseClass</key>
 						<string>CCButton</string>
 						<key>children</key>
@@ -490,9 +490,9 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>Play</string>
+						<string>Feed</string>
 						<key>memberVarAssignmentName</key>
-						<string>happyButton</string>
+						<string>feedButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -550,7 +550,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>happyUp</string>
+									<string>feed</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -595,7 +595,7 @@
 								<string>String</string>
 								<key>value</key>
 								<array>
-									<string>Play</string>
+									<string>Feed</string>
 									<false/>
 								</array>
 							</dict>
@@ -808,7 +808,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>6</integer>
+						<integer>2</integer>
 						<key>baseClass</key>
 						<string>CCButton</string>
 						<key>children</key>
@@ -816,9 +816,9 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>Feed</string>
+						<string>Play</string>
 						<key>memberVarAssignmentName</key>
-						<string>feedButton</string>
+						<string>happyButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -876,7 +876,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>feed</string>
+									<string>happyUp</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -921,7 +921,7 @@
 								<string>String</string>
 								<key>value</key>
 								<array>
-									<string>Feed</string>
+									<string>Play</string>
 									<false/>
 								</array>
 							</dict>
@@ -3004,8 +3004,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
