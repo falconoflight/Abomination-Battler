@@ -709,7 +709,7 @@
 				<key>displayName</key>
 				<string>Credits</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>creditsButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -767,7 +767,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>credits</string>
 							<integer>1</integer>
 						</array>
 					</dict>
