@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E66E5461B7D6563007E1D09 /* MixPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66E5451B7D6563007E1D09 /* MixPanel.swift */; };
 		2E7F18411B755F4C00E9C0AA /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F18401B755F4C00E9C0AA /* Stats.swift */; };
 		2E8E47081B5B35B000A4093E /* Habitat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E47071B5B35B000A4093E /* Habitat.swift */; };
 		2E8E470E1B5B364800A4093E /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E470D1B5B364800A4093E /* NewGame.swift */; };
@@ -161,6 +162,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E66E5451B7D6563007E1D09 /* MixPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixPanel.swift; sourceTree = "<group>"; };
 		2E7F18401B755F4C00E9C0AA /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stats.swift; path = Source/Stats.swift; sourceTree = "<group>"; };
 		2E8E47071B5B35B000A4093E /* Habitat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Habitat.swift; path = "Source/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../../../Habitat.swift"; sourceTree = "<group>"; };
 		2E8E470D1B5B364800A4093E /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewGame.swift; path = Source/NewGame.swift; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				2E7F18401B755F4C00E9C0AA /* Stats.swift */,
 				2EA951F31B6694590042B586 /* Thunderdome.swift */,
 				2EA951F01B608AA10042B586 /* UserState.swift */,
+				2E66E5451B7D6563007E1D09 /* MixPanel.swift */,
 				2EA951F91B6C180A0042B586 /* MatchOver.swift */,
 				2EA951E61B5B65760042B586 /* Town.swift */,
 				2EA951E41B5B64B70042B586 /* BattleArena.swift */,
@@ -922,6 +925,7 @@
 				2EA951FA1B6C180A0042B586 /* MatchOver.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				2E8E47081B5B35B000A4093E /* Habitat.swift in Sources */,
+				2E66E5461B7D6563007E1D09 /* MixPanel.swift in Sources */,
 				2E8E470E1B5B364800A4093E /* NewGame.swift in Sources */,
 				2EA951F11B608AA10042B586 /* UserState.swift in Sources */,
 				2EA951E91B5B6A360042B586 /* Untitled.swift in Sources */,
