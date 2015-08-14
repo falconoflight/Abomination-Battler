@@ -38,10 +38,4 @@ class NewGame: CCNode {
         }
     }
     
-//  func monsterStart() {
-//    if let path = NSBundle.mainBundle().pathForResource("MonsterStart", ofType: "plist"){
-//        let src = NSDictionary(contentsOfFile: path)
-//        let dict = src?[]  as! NSDictionary
-//    
-//    }
 }
