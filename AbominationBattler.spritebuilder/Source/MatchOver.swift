@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-
+import Mixpanel
 
 class MatchOver: CCNode {
     
@@ -17,7 +17,7 @@ class MatchOver: CCNode {
     weak var fightButton: CCButton?
     weak var habitatButton: CCButton?
     
-    
+    var mixpanel = Mixpanel.sharedInstance()
     
     func toHabitat(){
         let toHabitat = CCBReader.loadAsScene("Habitat")
@@ -27,6 +27,7 @@ class MatchOver: CCNode {
     func toThunderdome(){
         let toThunderdome = CCBReader.loadAsScene("Thunderdome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
+        mixpanel.track("Fight", properties: ["Arena": "Computer"])
     }
 
     

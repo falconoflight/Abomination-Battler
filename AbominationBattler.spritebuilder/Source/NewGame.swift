@@ -6,17 +6,18 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-//import Cocoa
+import Mixpanel
 
 class NewGame: CCNode {
     
+    var mixpanel = Mixpanel.sharedInstance()
     weak var menuStatBlock : CCLabelTTF!
     var lastMonsterPicked: String!
     var stateObject = UserState()
     weak var nameType: CCLabelTTF!
     
     func untitled() {
-       
+        mixpanel.track("New Game", properties: ["Monster Chosen": stateObject.monsterType])
         stateObject.monsterType = lastMonsterPicked
         
         let untitled = CCBReader.loadAsScene("Untitled")

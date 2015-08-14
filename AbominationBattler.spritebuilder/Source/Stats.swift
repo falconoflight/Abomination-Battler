@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
+import Mixpanel
 import Foundation
 class Stats: CCNode  {
     weak var win: CCLabelTTF?
@@ -18,7 +19,7 @@ class Stats: CCNode  {
     weak var xp: CCLabelTTF?
 
     weak var closeButton: CCButton?
-    
+    var mixpanel = Mixpanel.sharedInstance()
     var userState = UserState()
     
 //  insert all the stats here
@@ -57,6 +58,7 @@ class Stats: CCNode  {
         
         win?.string = "\(userState.monsterWin)"
         loss?.string = "\(userState.monsterLose)"
+        mixpanel.track("Stats", properties: ["View": "default"])
     }
 
     func close(){

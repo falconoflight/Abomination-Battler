@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Karl Stenerud. All rights reserved.
 //
 
-
+import Mixpanel
 
 class Habitat: CCNode {
     
@@ -22,7 +22,7 @@ class Habitat: CCNode {
     var userState = UserState()
     
     var meterTime: Float = 1000.0
-    
+    var mixpanel = Mixpanel.sharedInstance()
     
     var timeLeft: Float = 1000.0 {
         didSet {
@@ -68,12 +68,14 @@ class Habitat: CCNode {
     
     func feed() {
         timeLeft = 1000
+        mixpanel.track("Pet Care", properties: ["Action" : "Feed"])
     }
 
     
     func toThunderdome(){
         let toThunderdome = CCBReader.loadAsScene("Thunderdome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
+        mixpanel.track("Fight", properties: ["Arena": "Computer"])
     }
 //    
 //    func toArena() {
@@ -83,6 +85,7 @@ class Habitat: CCNode {
     
     func happyUp() {
         boredom = 1000
+        mixpanel.track("Pet Care", properties: ["Action": "Play"])
     }
     
     func stats() {
