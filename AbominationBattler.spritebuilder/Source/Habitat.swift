@@ -17,6 +17,7 @@ class Habitat: CCNode {
     weak var spawnPoint: CCNode!
     weak var nameTag: CCLabelTTF!
     weak var statButton: CCButton!
+    weak var mainbutton: CCButton!
     
     var monsterSprite: CCSprite!
     var userState = UserState()
@@ -76,6 +77,13 @@ class Habitat: CCNode {
         let toThunderdome = CCBReader.loadAsScene("Thunderdome")
         CCDirector.sharedDirector().presentScene(toThunderdome)
         mixpanel.track("Fight", properties: ["Arena": "Computer"])
+    }
+    
+    // only for demo day
+    func toMain(){
+        let main = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(main)
+  
     }
 //    
 //    func toArena() {
